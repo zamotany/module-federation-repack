@@ -11,7 +11,7 @@ yarn --cwd app && yarn --cwd host
 ### Running app container
 
 App can be run as a standalone application using:
-1. `yarn --cwd app start` (notice the dev server is running on port 9000)
+1. `LOCAL=1 yarn --cwd app start` (notice the dev server is running on port 9000)
 2. `yarn --cwd app ios`/`yarn --cwd app android`
   
 Or as part of a Host application.

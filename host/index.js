@@ -1,7 +1,7 @@
 import * as React from 'react';
-import {AppRegistry, Text, View, Platform} from 'react-native';
+import { AppRegistry, Text, View, Platform } from 'react-native';
 import { ChunkManager } from '@callstack/repack/client';
-import {name as appName} from './app.json';
+import { name as appName } from './app.json';
 
 ChunkManager.configure({
   forceRemoteChunkResolution: true,

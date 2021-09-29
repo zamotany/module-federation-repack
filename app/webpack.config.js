@@ -2,8 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const TerserPlugin = require('terser-webpack-plugin');
 const ReactNative = require('@callstack/repack');
-const {ModuleFederationPlugin} = require("webpack").container;
-const { BannerPlugin } = require('webpack');
+const { ModuleFederationPlugin } = require("webpack").container;
 
 /**
  * More documentation, installation, usage, motivation and differences with Metro is available at:
@@ -296,7 +295,6 @@ module.exports = {
       },
     }),
 
-    // -------------------------
     new ModuleFederationPlugin({
       name: "app",
       filename: `app.container.bundle`,
@@ -308,11 +306,15 @@ module.exports = {
         "./App.js": "./src/App.js"
       },
       shared: {
-        react: { singleton: true },
+        react: {
+          singleton: true ,
+          eager: Boolean(process.env.LOCAL), // to be figured out
+        },
         "react-native": {
           singleton: true,
+          eager: Boolean(process.env.LOCAL), // to be figured out
           version: require('./package.json').dependencies['react-native']
-        }
+        },
       },
     }),
   ],
