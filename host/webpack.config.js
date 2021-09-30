@@ -305,7 +305,7 @@ module.exports = {
         "react-native": {
           singleton: true,
           eager: true,
-          version: require('./package.json').dependencies['react-native']
+          requiredVersion: require('./package.json').dependencies['react-native'],
         }
       },
     }),

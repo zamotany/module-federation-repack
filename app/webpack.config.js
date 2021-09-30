@@ -313,7 +313,7 @@ module.exports = {
         "react-native": {
           singleton: true,
           eager: Boolean(process.env.LOCAL), // to be figured out
-          version: require('./package.json').dependencies['react-native']
+          requiredVersion: '^0.65.0'
         },
       },
     }),
