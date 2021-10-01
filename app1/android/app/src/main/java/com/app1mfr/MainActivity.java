@@ -1,7 +1,6 @@
-package com.hostmfr;
+package com.App1MFR;
 
 import com.facebook.react.ReactActivity;
-import android.os.Bundle;cd .
 
 public class MainActivity extends ReactActivity {
 
@@ -11,11 +10,6 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "HostMFR";
-  }
-
-  @Override
-  protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(null);
+    return "App1MFR";
   }
 }
