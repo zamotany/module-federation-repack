@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-yarn --cwd app && yarn --cwd host
+yarn --cwd app1 && yarn --cwd app2 && yarn --cwd host
 ```
 
 ## Usage

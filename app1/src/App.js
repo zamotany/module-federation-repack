@@ -44,25 +44,26 @@ export default function App() {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
+    flex: 1,
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
+      <View
         style={backgroundStyle}>
         <Header />
         <View
           style={{
+            flex: 1,
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
           <Section title="App 1">
             This screen comes from <Text style={styles.highlight}>app1</Text> container.
           </Section>
         </View>
-      </ScrollView>
+      </View>
     </SafeAreaView>
   );
 };

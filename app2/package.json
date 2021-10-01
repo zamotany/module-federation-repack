@@ -14,7 +14,7 @@
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/runtime": "^7.15.4",
-    "@callstack/repack": "file:../callstack-repack-v2.4.0.tgz",
+    "@callstack/repack": "file:../callstack-repack-v2.5.0.tgz",
     "babel-loader": "^8.2.2",
     "metro-react-native-babel-preset": "^0.66.2",
     "patch-package": "^6.4.7",
