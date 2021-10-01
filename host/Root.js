@@ -7,15 +7,14 @@ import { ChunkManager } from '@callstack/repack/client';
 ChunkManager.configure({
   forceRemoteChunkResolution: true,
   resolveRemoteChunk: async (chunkId, parentId) => {
-    console.log({ chunkId, parentId });
     let url;
 
     switch (parentId) {
       case 'app1':
-        url = `http://localhost:9000/${chunkId}-app1.chunk.bundle`
+        url = `http://localhost:9000/${chunkId}.chunk.bundle`
         break;
       case 'app2':
-        url = `http://localhost:9001/${chunkId}-app2.chunk.bundle`
+        url = `http://localhost:9001/${chunkId}.chunk.bundle`
         break;
       case 'main':
       default:
@@ -78,7 +77,7 @@ const Tab = createBottomTabNavigator();
 export function Root() {
   return (
     <NavigationContainer>
-      <Tab.Navigator>
+      <Tab.Navigator initialRouteName="App1">
         <Tab.Screen name="App1" component={App1Wrapper} />
         <Tab.Screen name="App2" component={App2Wrapper} />
       </Tab.Navigator>

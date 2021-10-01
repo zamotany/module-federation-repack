@@ -738,9 +738,10 @@
   resolved "https://registry.npmjs.org/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@callstack/repack@file:../callstack-repack-v2.5.0.tgz":
-  version "2.5.0"
-  resolved "file:../callstack-repack-v2.5.0.tgz#5e0cbcdd7779bbb95d565f7fb416ab23484e3421"
+"@callstack/repack@2.4.0-mf.1":
+  version "2.4.0-mf.1"
+  resolved "https://registry.npmjs.org/@callstack/repack/-/repack-2.4.0-mf.1.tgz#d7549feb3235f18c81ae0e5172341a30014fa153"
+  integrity sha512-PEyhwwEJUc3MV8vHSXPKKR3M4H0K/dwLK34WhRgAwaQXoX3ZpElSAP6GwzyROPWxiPlT6L1u7xvch35ACGmuDw==
   dependencies:
     "@babel/code-frame" "^7.12.13"
     "@pmmmwh/react-refresh-webpack-plugin" "^0.4.3"
