@@ -24,7 +24,7 @@ App can be run as a standalone application using:
   
 Or as part of a Host application.
 
-### Running host application with app container
+### Running host application with app containers
 
 1. Run dev server for app 1 container: `yarn --cwd app1 start`
 2. Run dev server for app 2 container: `yarn --cwd app2 start`
@@ -35,5 +35,6 @@ Or as part of a Host application.
 
 It might be helpful to open Re.Pack's web dashboard to analyse artifacts:
 
-- http://localhost:9000/dashboard for app container
+- http://localhost:9000/dashboard for app1 container
+- http://localhost:9001/dashboard for app2 container
 - http://localhost:8081/dashboard for host container
