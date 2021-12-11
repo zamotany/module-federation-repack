@@ -254,6 +254,7 @@ module.exports = {
       exclude: /\.chunk\.(js)?bundle$/,
       filename: '[file].map',
       append: `//# sourceMappingURL=[url]?platform=${platform}`,
+      moduleFilenameTemplate: 'webpack://host/[resource-path]?[loaders]',
       /**
        * Uncomment for faster builds but less accurate Source Maps
        */
@@ -271,6 +272,7 @@ module.exports = {
       include: /\.chunk\.(js)?bundle$/,
       filename: '[file].map',
       append: `//# sourceMappingURL=[url]?platform=${platform}`,
+      moduleFilenameTemplate: 'webpack://host/[resource-path]?[loaders]',
       /**
        * Uncomment for faster builds but less accurate Source Maps
        */

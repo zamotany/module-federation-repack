@@ -27,7 +27,10 @@ ChunkManager.configure({
     }
 
     return {
-      url: `${url}?platform=${Platform.OS}`,
+      url,
+      query: {
+        platform: Platform.OS,
+      },
       excludeExtension: true,
     }
   }

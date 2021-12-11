@@ -684,16 +684,17 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
-"@callstack/repack@2.4.0-mf.1":
-  version "2.4.0-mf.1"
-  resolved "https://registry.npmjs.org/@callstack/repack/-/repack-2.4.0-mf.1.tgz#d7549feb3235f18c81ae0e5172341a30014fa153"
-  integrity sha512-PEyhwwEJUc3MV8vHSXPKKR3M4H0K/dwLK34WhRgAwaQXoX3ZpElSAP6GwzyROPWxiPlT6L1u7xvch35ACGmuDw==
+"@callstack/repack@2.5.1":
+  version "2.5.1"
+  resolved "https://registry.npmjs.org/@callstack/repack/-/repack-2.5.1.tgz#9306803b9f51194eda21a9812cec1ac555b40f4f"
+  integrity sha512-+Bmv3szAminlNxek3j8gKhkc9moUczuqE5IvnnLl6c58mAnisOTkR4YXMUbRm8twFiprhkrYUy+uDJnMzu+11Q==
   dependencies:
     "@babel/code-frame" "^7.12.13"
     "@pmmmwh/react-refresh-webpack-plugin" "^0.4.3"
     colorette "^1.2.2"
     dedent "^0.7.0"
     escape-string-regexp "^4.0.0"
+    events "^3.3.0"
     execa "^5.0.0"
     fastify "^3.12.0"
     fastify-express "^0.3.2"
@@ -712,6 +713,7 @@
     ora "^5.3.0"
     pretty-format "^26.6.2"
     schema-utils "^3.0.0"
+    shallowequal "^1.1.0"
     source-map "^0.7.3"
     split2 "^3.2.2"
     tapable "^2.1.1"
@@ -2216,7 +2218,7 @@ event-target-shim@^5.0.0, event-target-shim@^5.0.1:
   resolved "https://registry.npmjs.org/event-target-shim/-/event-target-shim-5.0.1.tgz#5d4d3ebdf9583d63a5333ce2deb7480ab2b05789"
   integrity sha512-i/2XbnSz/uxRCU6+NdVJgKWDTM427+MqYbkQzD321DuCQJUqOuJKIA0IM2+W2xtYHdKOmZ4dR6fExsd4SXL+WQ==
 
-events@^3.2.0:
+events@^3.2.0, events@^3.3.0:
   version "3.3.0"
   resolved "https://registry.npmjs.org/events/-/events-3.3.0.tgz#31a95ad0a924e2d2c419a813aeb2c4e878ea7400"
   integrity sha512-mQw+2fkQbALzQ7V0MY0IqdnXNOeTtP4r0lN9z7AAawCXgqea7bDii20AYrIBrFd/Hx0M2Ocz6S111CaFkUcb0Q==
@@ -4966,6 +4968,11 @@ shallow-clone@^3.0.0:
   integrity sha512-/6KqX+GVUdqPuPPd2LxDDxzX6CAbjJehAAOKlNpqqUpAqPM6HeL8f+o3a+JsyGjn2lv0WY8UsTgUJjU9Ok55NA==
   dependencies:
     kind-of "^6.0.2"
+
+shallowequal@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.npmjs.org/shallowequal/-/shallowequal-1.1.0.tgz#188d521de95b9087404fd4dcb68b13df0ae4e7f8"
+  integrity sha512-y0m1JoUZSlPAjXVtPPW70aZWfIL/dSP7AFkRnniLCrK/8MDKog3TySTBmckD+RObVxH0v4Tox67+F14PdED2oQ==
 
 shebang-command@^1.2.0:
   version "1.2.0"

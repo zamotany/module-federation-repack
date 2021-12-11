@@ -13,6 +13,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		4A4A826C39973374B342E501 /* libPods-HostMFR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 346B5F71ADE0A370A70434F8 /* libPods-HostMFR.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		9CA7B1492765011A0042D3FD /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA7B1482765011A0042D3FD /* File.swift */; };
 		A6CF34775E03C309DEAB163D /* libPods-HostMFR-HostMFRTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD20F517C334B0D799DE647C /* libPods-HostMFR-HostMFRTests.a */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,8 @@
 		46BB1A82F49BC6B127C49D3C /* Pods-HostMFR-HostMFRTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HostMFR-HostMFRTests.release.xcconfig"; path = "Target Support Files/Pods-HostMFR-HostMFRTests/Pods-HostMFR-HostMFRTests.release.xcconfig"; sourceTree = "<group>"; };
 		474F64AB22EDFF4637FCFE54 /* Pods-HostMFR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HostMFR.release.xcconfig"; path = "Target Support Files/Pods-HostMFR/Pods-HostMFR.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = HostMFR/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9CA7B147276501190042D3FD /* HostMFR-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HostMFR-Bridging-Header.h"; sourceTree = "<group>"; };
+		9CA7B1482765011A0042D3FD /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		AD20F517C334B0D799DE647C /* libPods-HostMFR-HostMFRTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HostMFR-HostMFRTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECE8A8855A5119926D058E1 /* Pods-HostMFR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HostMFR.debug.xcconfig"; path = "Target Support Files/Pods-HostMFR/Pods-HostMFR.debug.xcconfig"; sourceTree = "<group>"; };
 		D307C321D32882658C39B71C /* Pods-HostMFR-HostMFRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HostMFR-HostMFRTests.debug.xcconfig"; path = "Target Support Files/Pods-HostMFR-HostMFRTests/Pods-HostMFR-HostMFRTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +95,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				9CA7B1482765011A0042D3FD /* File.swift */,
+				9CA7B147276501190042D3FD /* HostMFR-Bridging-Header.h */,
 			);
 			name = HostMFR;
 			sourceTree = "<group>";
@@ -114,7 +119,6 @@
 				D307C321D32882658C39B71C /* Pods-HostMFR-HostMFRTests.debug.xcconfig */,
 				46BB1A82F49BC6B127C49D3C /* Pods-HostMFR-HostMFRTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +212,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1310;
 					};
 				};
 			};
@@ -412,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				9CA7B1492765011A0042D3FD /* File.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D307C321D32882658C39B71C /* Pods-HostMFR-HostMFRTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -458,6 +464,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 46BB1A82F49BC6B127C49D3C /* Pods-HostMFR-HostMFRTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = HostMFRTests/Info.plist;
@@ -498,6 +505,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = HostMFR;
+				SWIFT_OBJC_BRIDGING_HEADER = "HostMFR-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -523,6 +531,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = HostMFR;
+				SWIFT_OBJC_BRIDGING_HEADER = "HostMFR-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -561,7 +570,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 i386";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -626,7 +635,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 i386";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
