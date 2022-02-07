@@ -321,6 +321,7 @@ module.exports = {
         },
         'react-native-reanimated': {
           singleton: true,
+          eager: STANDALONE,
           requiredVersion: '^2.3.1',
         },
       },
