@@ -13,6 +13,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		5DC2A8665DBF8CFC56586AF1 /* libPods-App1MFR-App1MFRTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F0B84AFAF2FAC7645CEE05 /* libPods-App1MFR-App1MFRTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		9D1FB9EF27B18E14007297CA /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FB9EE27B18E14007297CA /* File.swift */; };
 		DC08B5E99334BC372E4A3205 /* libPods-App1MFR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 717DB35025AF55A45454FEEB /* libPods-App1MFR.a */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,8 @@
 		717DB35025AF55A45454FEEB /* libPods-App1MFR.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-App1MFR.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BA4F3D24689F8EF12B2BF7D /* Pods-App1MFR-App1MFRTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App1MFR-App1MFRTests.release.xcconfig"; path = "Target Support Files/Pods-App1MFR-App1MFRTests/Pods-App1MFR-App1MFRTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = App1MFR/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9D1FB9ED27B18E13007297CA /* App1MFR-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "App1MFR-Bridging-Header.h"; sourceTree = "<group>"; };
+		9D1FB9EE27B18E14007297CA /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		D321D3FB82EB809AA8EEFCF0 /* Pods-App1MFR-App1MFRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App1MFR-App1MFRTests.debug.xcconfig"; path = "Target Support Files/Pods-App1MFR-App1MFRTests/Pods-App1MFR-App1MFRTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F9E57E5C47AE240FA05C2F4D /* Pods-App1MFR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App1MFR.release.xcconfig"; path = "Target Support Files/Pods-App1MFR/Pods-App1MFR.release.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +95,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				9D1FB9EE27B18E14007297CA /* File.swift */,
+				9D1FB9ED27B18E13007297CA /* App1MFR-Bridging-Header.h */,
 			);
 			name = App1MFR;
 			sourceTree = "<group>";
@@ -145,7 +150,6 @@
 				D321D3FB82EB809AA8EEFCF0 /* Pods-App1MFR-App1MFRTests.debug.xcconfig */,
 				7BA4F3D24689F8EF12B2BF7D /* Pods-App1MFR-App1MFRTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +212,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -412,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				9D1FB9EF27B18E14007297CA /* File.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D321D3FB82EB809AA8EEFCF0 /* Pods-App1MFR-App1MFRTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -458,6 +464,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7BA4F3D24689F8EF12B2BF7D /* Pods-App1MFR-App1MFRTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = App1MFRTests/Info.plist;
@@ -498,6 +505,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = App1MFR;
+				SWIFT_OBJC_BRIDGING_HEADER = "App1MFR-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -523,6 +531,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = App1MFR;
+				SWIFT_OBJC_BRIDGING_HEADER = "App1MFR-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -561,7 +570,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "i386 arm64";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -626,7 +635,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "i386 arm64";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

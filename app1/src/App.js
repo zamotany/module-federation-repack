@@ -8,12 +8,10 @@ import {
   View,
 } from 'react-native';
 
-import {
-  Colors,
-  Header,
-} from 'react-native/Libraries/NewAppScreen';
+import { Colors, Header } from 'react-native/Libraries/NewAppScreen';
+import { ReanimatedComponent } from './ReanimatedComponent';
 
-const Section = ({children, title}) => {
+const Section = ({ children, title }) => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
     <View style={styles.sectionContainer}>
@@ -23,7 +21,8 @@ const Section = ({children, title}) => {
           {
             color: isDarkMode ? Colors.white : Colors.black,
           },
-        ]}>
+        ]}
+      >
         {title}
       </Text>
       <Text
@@ -32,7 +31,8 @@ const Section = ({children, title}) => {
           {
             color: isDarkMode ? Colors.light : Colors.dark,
           },
-        ]}>
+        ]}
+      >
         {children}
       </Text>
     </View>
@@ -50,22 +50,24 @@ export default function App() {
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <View
-        style={backgroundStyle}>
+      <View style={backgroundStyle}>
         <Header />
+        <ReanimatedComponent backgroundColor="blue" />
         <View
           style={{
             flex: 1,
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
+          }}
+        >
           <Section title="App 1">
-            This screen comes from <Text style={styles.highlight}>app1</Text> container.
+            This screen comes from <Text style={styles.highlight}>app1</Text>{' '}
+            container.
           </Section>
         </View>
       </View>
     </SafeAreaView>
   );
-};
+}
 
 const styles = StyleSheet.create({
   sectionContainer: {

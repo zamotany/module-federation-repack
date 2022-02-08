@@ -9,8 +9,8 @@ import { name as appName } from './app.json';
 //   resolveRemoteChunk: async (chunkId) => {
 //     return {
 //       url: `http://localhost:${process.env.__PUBLIC_PORT__}/${chunkId}`,
-//     }
-//   }
-// })
+//     };
+//   },
+// });
 
 AppRegistry.registerComponent(appName, () => App);

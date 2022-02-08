@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const TerserPlugin = require('terser-webpack-plugin');
 const ReactNative = require('@callstack/repack');
-const { ModuleFederationPlugin } = require("webpack").container;
+const { ModuleFederationPlugin } = require('webpack').container;
 
 const STANDALONE = Boolean(process.env.STANDALONE);
 
@@ -300,24 +300,29 @@ module.exports = {
     }),
 
     new ModuleFederationPlugin({
-      name: "app1",
+      name: 'app1',
       filename: `app1.container.bundle`,
       library: {
         name: 'app1',
         type: 'self',
       },
       exposes: {
-        "./App.js": "./src/App.js"
+        './App.js': './src/App.js',
       },
       shared: {
         react: {
-          singleton: true ,
-          eager: STANDALONE, // to be figured out
-        },
-        "react-native": {
           singleton: true,
           eager: STANDALONE, // to be figured out
-          requiredVersion: '^0.65.0'
+        },
+        'react-native': {
+          singleton: true,
+          eager: STANDALONE, // to be figured out
+          requiredVersion: '^0.65.0',
+        },
+        'react-native-reanimated': {
+          singleton: true,
+          eager: STANDALONE,
+          requiredVersion: '^2.3.1',
         },
       },
     }),
